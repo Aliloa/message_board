@@ -29,7 +29,6 @@ export default function Form({ x, y, closeForm, updateMessages  }) {
 
     // Fonction pour soumettre le formulaire
     const handleSubmit = async (e) => {
-        e.preventDefault();
 
         try {
             const response = await fetch("https://messageboard-production-4657.up.railway.app/messages", {
