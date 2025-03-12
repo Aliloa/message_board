@@ -1,0 +1,33 @@
+.form input, .form textarea {
+    background-color: white;
+    border: solid 1px var(--secondary);
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.form {
+    color: var(--secondary);
+}*
+.form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form button {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.form button:hover {
+    background-color: var(--primary);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}

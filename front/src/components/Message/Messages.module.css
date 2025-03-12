@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container {
+    list-style: none;
+    padding: 0;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message p {
+    width: 200px;
+    word-break: break-word;
+}
+
+.dotContainer {
+    position: absolute;
+    display: inline-block;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%; /* Place le message au-dessus */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.dotContainer:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.message small {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}

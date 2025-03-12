@@ -1,0 +1,117 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Message/Messages.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.Messages_container__D6802 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Messages_container__D6802 {
+    list-style: none;
+    padding: 0;
+}
+
+.Messages_message__FaduB {
+    margin-bottom: 10px;
+}
+
+.Messages_message__FaduB p {
+    width: 200px;
+    word-break: break-word;
+}
+
+.Messages_dotContainer__FPFxq {
+    position: absolute;
+    display: inline-block;
+}
+
+.Messages_dot__Eyb_K {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Messages_tooltip__7sG0u {
+    position: absolute;
+    bottom: 100%; /* Place le message au-dessus */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.Messages_dotContainer__FPFxq:hover .Messages_tooltip__7sG0u {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Messages_message__FaduB small {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Form/Form.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Form_form__ngj4g input, .Form_form__ngj4g textarea {
+    background-color: white;
+    border: solid 1px var(--secondary);
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.Form_form__ngj4g {
+    color: var(--secondary);
+}*
+.Form_form__ngj4g label {
+    display: flex;
+    flex-direction: column;
+}
+
+.Form_form__ngj4g button {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.Form_form__ngj4g button:hover {
+    background-color: var(--primary);
+}
+
+.Form_buttons__Yz5hr {
+    display: flex;
+    gap: 10px;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Board/Board.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.Board_container__t1m3r {
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+    border: solid 2px var(--secondary);
+    border-radius: 50px;
+    margin: auto;
+}
+
+.Board_formContainer__XdAhB {
+    position: absolute;
+    padding: 15px;
+    z-index: 10;
+    background-color: var(--bg);
+    border: solid 2px var(--secondary);
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+}
