@@ -8,7 +8,7 @@ export default function Messages() {
     const popperInstances = useRef([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/messages')
+        fetch('https://messageboard-production-4657.up.railway.app/messages')
             .then(response => response.json())
             .then(data => setMessages(data))
             .catch(error => console.error('Erreur lors de la récupération des messages:', error));

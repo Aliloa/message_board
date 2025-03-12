@@ -31,7 +31,7 @@ export default function Form({ x, y, closeForm }) {
     const handleSubmit = async (e) => {
 
         try {
-            const response = await fetch("http://localhost:3000/messages", {
+            const response = await fetch("https://messageboard-production-4657.up.railway.app/messages", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
