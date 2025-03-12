@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 
-const mongoURI = process.env.MONGO_URI;
+const mongoURI = "mongodb+srv://alina:Board123@alina.lpbml.mongodb.net/?retryWrites=true&w=majority&appName=Alina";
 const connectDB = async () => {
     mongoose.connect(mongoURI)
         .then(() => {
