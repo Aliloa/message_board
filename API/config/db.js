@@ -2,8 +2,9 @@
 
 const mongoose = require('mongoose');
 
+const mongoURI = process.env.MONGO_URI;
 const connectDB = async () => {
-    mongoose.connect('mongodb://localhost:27017/Board')
+    mongoose.connect(mongoURI)
         .then(() => {
             console.log('Connexion à MongoDB réussie');
         }).catch(err => {
