@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Form.module.css";
 
-export default function Form({ x, y, closeForm }) {
+export default function Form({ x, y, closeForm, updateMessages  }) {
     const getTodayDate = () => new Date().toISOString().split("T")[0]; // Récupère la date du jour au format YYYY-MM-DD
 
     const [formData, setFormData] = useState({
@@ -29,6 +29,7 @@ export default function Form({ x, y, closeForm }) {
 
     // Fonction pour soumettre le formulaire
     const handleSubmit = async (e) => {
+        e.preventDefault();
 
         try {
             const response = await fetch("https://messageboard-production-4657.up.railway.app/messages", {
@@ -43,6 +44,7 @@ export default function Form({ x, y, closeForm }) {
 
             const data = await response.json();
             console.log("Réponse du serveur :", data);
+            updateMessages(data);
             alert("Formulaire envoyé avec succès !");
         } catch (error) {
             console.error("Erreur :", error);
@@ -54,12 +56,12 @@ export default function Form({ x, y, closeForm }) {
         <form onSubmit={handleSubmit} className={styles.form}>
             <label>
                 Nom
-                <input type="text" name="auteur" value={formData.nom} onChange={handleChange} />
+                <input type="text" name="auteur" value={formData.auteur} onChange={handleChange} />
             </label>
             <br />
             <label>
                 Message
-                <textarea rows="3" cols="30" name="texte" value={formData.message} onChange={handleChange} placeholder="Max characters 100" maxLength="100"/>
+                <textarea rows="3" cols="30" name="texte" value={formData.texte} onChange={handleChange} placeholder="Max characters 100" maxLength="100"/>
             </label>
             <br />
             {/* <p>Position : X = {x}, Y = {y}</p> */}
